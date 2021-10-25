@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.conteiner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  height: 108px;
+}
+
+.position {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .position {
+    position: static;
+    display: flex;
+  }
+}
+
+.logo {
+  height: 50px;
+  width: 200px;
+
+  border: 2px solid red;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .logo {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.nav {
+  height: 50px;
+  max-width: 100%;
+
+  border: 2px solid blue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .nav {
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+.position-main {
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .main {
+    display: flex;
+  }
+
+  .position-main {
+    height: auto;
+    width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+}
+
+.bacground1 {
+  position: absolute;
+  background-image: url(../image/b1.jpg);
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+
+.bacground2 {
+  position: absolute;
+  z-index: 2;
+  height: 250px;
+  width: 100%;
+  background-image: url(../image/b2.jpg);
+  background-size: cover;
+  opacity: 1;
+  transition-property: opacity;
+  transition-timing-function: linear;
+  transition-duration: 500ms;
+}
+
+@media screen and (min-width: 800px) {
+  .bacground1 {
+    height: 100%;
+  }
+
+  .bacground2 {
+    height: 100%;
+  }
+}
+
+.bacground2:hover {
+  opacity: 0;
+}
+
+.content {
+  display: block;
+}
+
+.content {
+  padding: 50px;
+  margin: 0;
+}
+
+.text {
+  flex-basis: 0;
+  flex-grow: 1;
+}
