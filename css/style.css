@@ -17,6 +17,11 @@ li {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .conteiner {
   max-width: 1120px;
   margin-left: auto;
@@ -78,6 +83,7 @@ li {
   overflow: hidden;
   opacity: 0;
   transition: opacity 250ms linear;
+  z-index: 999;
 }
 
 .list .item:hover > .visually-hidden,
@@ -85,7 +91,7 @@ li {
   min-width: 250px;
   height: auto;
   background-color: #fff;
-  border: 1px solid black;
+  border: 1px solid #f2efef;
   border-radius: 5px;
   margin: 0;
   clip: auto;
@@ -94,6 +100,7 @@ li {
 
   top: 100%;
   left: 0%;
+  z-index: 999;
 }
 
 .position-relative {
@@ -136,7 +143,7 @@ li {
   min-width: 250px;
   height: auto;
   background-color: #fff;
-  border: 1px solid black;
+  border: 1px solid #f2efef;
   border-radius: 5px;
   margin: 0;
   clip: auto;
@@ -145,6 +152,7 @@ li {
 
   left: 105%;
   top: 0%;
+  z-index: 999;
 }
 
 .delivery-item {
@@ -167,13 +175,90 @@ li {
 
 .hero {
   display: flex;
-  flex-grow: 0;
+  align-items: center;
+
+  margin-top: 50px;
 }
 
 .hero-header {
+  flex-basis: 0;
   flex-grow: 1;
 }
 
 .hero-bacground {
+  flex-basis: 0;
   flex-grow: 1;
+}
+
+.thumb {
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.img {
+  background-image: url(../images/foto.webp);
+  max-width: 100%;
+  height: 100%;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.hero-bacgorund_description {
+  display: block;
+  position: absolute;
+  color: #f2efef;
+  padding: 100px 10px 0px 10px;
+  text-align: center;
+  background-color: black;
+  border-radius: 10px;
+  opacity: 0.5;
+  height: 300px;
+  margin: 0;
+}
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button-hero {
+  width: 50%;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  background-color: #f2efef;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: background-color 250ms linear, border 250ms linear;
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: #ffffff;
+  border: 2px solid #f2efef;
+}
+
+.copyrite {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+footer > .conteiner {
+  border-top: 4px solid #f2efef;
 }
