@@ -31,16 +31,27 @@ li {
   justify-content: space-between;
 }
 
+.position-item > button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: 700;
+  padding: 10px;
+}
+
 .menu-item {
   flex-basis: 70%;
 }
 
 .menu-item > .list {
   justify-content: space-evenly;
+  font-weight: 700;
 }
 
-.menu-item > .item {
-  width: 100%;
+.menu-item .item {
+  padding: 15px;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -52,4 +63,45 @@ li {
   padding: 0px;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.list .item:hover > .products {
+  min-width: 250px;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0;
+  clip: auto;
+  overflow: visible;
+
+  top: 95%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.products > .products-item,
+.delivery-item,
+.description {
+  padding: 10px 10px 10px 5px;
+}
+
+.products > .products-item::after {
+  content: "+";
+  justify-content: space-between;
+}
+
+.products > .products-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products > .products-item:hover::after {
+  content: "-";
 }

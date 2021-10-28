@@ -16,8 +16,8 @@
         <div class="conteiner position-flex position-item">
             <nav class="menu menu-item">
                 <ul class="list position-flex">
-                    <li class="item">Продукты
-                        <ul class="products visually-hidden">
+                    <li class="item position-relative" tabindex="1">Продукты
+                        <ul class="visually-hidden products position-absolute">
                             <li class="products-item">Дом
                                 <p class="description visually-hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus atque cum mollitia consectetur dicta architecto ducimus possimus! Cum repudiandae dignissimos corporis pariatur similique veniam inventore maiores eveniet aspernatur, eum provident.</p>
                             </li>
@@ -43,12 +43,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="item">О компании</li>
-                    <li class="item">Доставка
-                        <div class="visually-hidden">
-                            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus atque cum mollitia
-                                consectetur dicta architecto ducimus possimus! Cum repudiandae dignissimos corporis pariatur similique veniam
-                                inventore maiores eveniet aspernatur, eum provident.</p>
+                    <li class="item" tabindex="2">О компании</li>
+                    <li class="item position-relative" tabindex="3">Доставка
+                        <div class="visually-hidden products position-absolute">
+                            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus atque c.</p>
                             <ul class="delivery">
                                 <li class="delivery-item">Pay</li>
                                 <li class="delivery-item">Delivery</li>
@@ -78,6 +76,6 @@
         </div>
     </main> 
    
-    
+  <script src="./js/main.js" type="module"></script>  
 </body>
 </html>
